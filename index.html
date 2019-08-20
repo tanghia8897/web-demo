@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="./style.css?v=33343430">
+    <div class="npm-header">
+        <div class="csslider1 autoplay cs_handle">
+            <input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+            <input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+            <input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+            <input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked="">
+            <input name="cs_anchor1" id="cs_pause1" type="radio" class="cs_anchor">
+            <ul>
+                <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+                    <img src="https://www.cornerforu.com/wp-content/uploads/2017/12/IMAGE-1-2.jpg"
+                        style="width: 100%;">
+                </div>
+                <li class="num0 img">
+                    <img src="https://www.cornerforu.com/wp-content/uploads/2017/12/IMAGE-1-2.jpg" style="width: 100%;">
+                </li>
+                <li class="num1 img">
+                    <img src="https://www.cornerforu.com/wp-content/uploads/2017/12/IMAGE-1-2.jpg" style="width: 100%;">
+                </li>
+                <li class="num2 img">
+                    <img src="https://www.cornerforu.com/wp-content/uploads/2017/12/IMAGE-1-2.jpg" style="width: 100%;">
+                </li>
+
+            </ul>
+        </div>
+        <div class="header-content">
+            <div class="main-menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/LOGO.png" alt="">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                            <a href="about-2.html">Company</a>
+                            <a href="service.html">Services</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Case Studies</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mini-nenu">
+                <div class="backgroud" onclick="miniIconClick(this)"></div>
+                <div class="header" onclick="miniIconClick(this)">
+                    <img
+                        src="data:image/svg+xml;base64,
+            PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDkxLjMxOCwyMzUuMzE4SDIwLjY4MkM5LjI2LDIzNS4zMTgsMCwyNDQuNTc3LDAsMjU2czkuMjYsMjAuNjgyLDIwLjY4MiwyMC42ODJoNDcwLjYzNiAgICBjMTEuNDIzLDAsMjAuNjgyLTkuMjU5LDIwLjY4Mi0yMC42ODJDNTEyLDI0NC41NzgsNTAyLjc0MSwyMzUuMzE4LDQ5MS4zMTgsMjM1LjMxOHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5MS4zMTgsNzguNDM5SDIwLjY4MkM5LjI2LDc4LjQzOSwwLDg3LjY5OSwwLDk5LjEyMWMwLDExLjQyMiw5LjI2LDIwLjY4MiwyMC42ODIsMjAuNjgyaDQ3MC42MzYgICAgYzExLjQyMywwLDIwLjY4Mi05LjI2LDIwLjY4Mi0yMC42ODJDNTEyLDg3LjY5OSw1MDIuNzQxLDc4LjQzOSw0OTEuMzE4LDc4LjQzOXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5MS4zMTgsMzkyLjE5N0gyMC42ODJDOS4yNiwzOTIuMTk3LDAsNDAxLjQ1NiwwLDQxMi44NzlzOS4yNiwyMC42ODIsMjAuNjgyLDIwLjY4Mmg0NzAuNjM2ICAgIGMxMS40MjMsMCwyMC42ODItOS4yNTksMjAuNjgyLTIwLjY4MlM1MDIuNzQxLDM5Mi4xOTcsNDkxLjMxOCwzOTIuMTk3eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iI2ZmZmZmZiI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                            <a href="#">Company</a>
+                            <a href="#">Services</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Case Studies</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="introduce active">
+                <span class="collap-bt active" onclick="showIntroduce(this);">
+                    <img
+                        src="data:image/svg+xml;base64,
+                        PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDc3LjE3NSA0NzcuMTc1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NzcuMTc1IDQ3Ny4xNzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8cGF0aCBkPSJNMzYwLjczMSwyMjkuMDc1bC0yMjUuMS0yMjUuMWMtNS4zLTUuMy0xMy44LTUuMy0xOS4xLDBzLTUuMywxMy44LDAsMTkuMWwyMTUuNSwyMTUuNWwtMjE1LjUsMjE1LjUgICBjLTUuMyw1LjMtNS4zLDEzLjgsMCwxOS4xYzIuNiwyLjYsNi4xLDQsOS41LDRjMy40LDAsNi45LTEuMyw5LjUtNGwyMjUuMS0yMjUuMUMzNjUuOTMxLDI0Mi44NzUsMzY1LjkzMSwyMzQuMjc1LDM2MC43MzEsMjI5LjA3NXogICAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KPC9nPjwvZz4gPC9zdmc+" />
+                </span>
+                <div>
+                    <span class="title">LEADING SOFTWARE OUTSOURCING COMPANY IN VIETNAM</span>
+                    <span class="sub-title">Vietnam Software Development Company - Agile Software Company</span>
+                    <div class="sumary">
+                        <ul>
+                            <li>
+                                <span class="number">159</span>
+                                <p class="title">WEB APPLICATION DEVELOPMENT PROJECTS</p>
+                            </li>
+                            <li>
+                                <span class="number">165</span>
+                                <p class="title">MOBILE APP DEVELOPMENT PROJECTS</p>
+                            </li>
+                            <li>
+                                <span class="number">35</span>
+                                <p class="title">DEDICATED TEAM</p>
+                            </li>
+                            <li>
+                                <span class="number">42</span>
+                                <p class="title">CUSTOM SOFTWARE SOLUTIONS</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="service">
+            <span class="title">OUR SERVICES</span>
+            <span class="sub-title">Growing startups and enterprises in the world trust us, a leading IT software
+                outsourcing company in Vietnam.</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="./images/img1.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                                <h2>Offshore Software Development</h2>
+                            </a>
+                        </div>
+                    </div>
+                 </div><!-- end col-4 -->
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="./images/img2.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                                    <h2>Offshore Software Development</h2>
+                                </a>
+                            </div>
+                        </div>
+                     </div><!-- end col-4 -->
+                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="./images/img3.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                                    <h2>Offshore Software Development</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- end col-4 -->
+            </div> <!-- end row -->
+            <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="./images/img4.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                                    <h2>Offshore Software Development</h2>
+                                </a>
+                            </div>
+                        </div>
+                     </div><!-- end col-4 -->
+                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="./images/img5.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                                        <h2>Offshore Software Development</h2>
+                                    </a>
+                                </div>
+                            </div>
+                         </div><!-- end col-4 -->
+                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="./images/img6.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                                        <h2>Offshore Software Development</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- end col-4 -->
+                </div> <!-- end row -->
+        </div>
+    </div>
+    <div class="box-client-title project">
+        <span class="title">LATEST SOFTWARE PROJECTS</span>
+        <span class="sub-title">We produce awesome work for our clients according to their budget and time frame</span>
+        <div class="last-project-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="project-item">
+                        <!-- <div class="img" style="background: url('./images/project-images/image1.png')"></div> -->
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://saigontechnology.com/assets/media/web-baibai-image.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="info" id="info1">
+                            <span>
+                                ITS - INDIVIDUAL TAX SYSTEM
+                            </span>
+                            <p>
+                                Customer from: Sinagpore.
+                                Engagement model: fixed price.
+                            </p>
+                            <button  class="mini ui right labeled icon button button1">
+                                <i class="right arrow icon"></i>
+                                <a href="#">View project</a>
+                            </button>
+                        </div>
+                    </div>
+                </div> <!--  end col-4 -->
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="project-item">
+                        <!-- <div class="img" style="background: url('./images/project-images/image1.png')"></div> -->
+                        <div class="image">
+                            <a href="#">
+                                <img src="./images/project-images/image2.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="info" id="info2">
+                            <span>
+                                ITS - INDIVIDUAL TAX SYSTEM
+                            </span>
+                            <p>
+                                Customer from: Sinagpore.
+                                Engagement model: fixed price.
+                            </p>
+                            <!-- <a href="#">View project <i class="fa fa-arrow-right"></i></a> -->
+                            <button  class="mini ui right labeled icon button button2">
+                                <i class="right arrow icon"></i>
+                                <a href="#">View project</a>
+                            </button>
+                        </div>
+                    </div>
+                </div> <!--  end col-4 -->
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="project-item">
+                        <!-- <div class="img" style="background: url('./images/project-images/image1.png')"></div> -->
+                        <div class="image">
+                            <a href="#">
+                                <img src="./images/project-images/image3.png" alt="OFFSHORE SOFTWARE DEVELOPMENT" title="OFFSHORE SOFTWARE DEVELOPMENT" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="info" id="info3">
+                            <span>
+                                ITS - INDIVIDUAL TAX SYSTEM
+                            </span>
+                            <p>
+                                Customer from: Sinagpore.
+                                Engagement model: fixed price.
+                            </p>
+                            <button  class="mini ui right labeled icon button button3">
+                                <i class="right arrow icon"></i>
+                                <a href="#">View project</a>
+                            </button>
+                        </div>
+                    </div>
+                </div> <!--  end col-4 -->
+                
+            </div><!--  end row -->
+        </div><!--  end row -->
+    </div>
+    <div class="box-client-title">
+        <span class="title">OUR RETAINED CLIENTS</span>
+        <span class="sub-title">Thank you for your precious feedback and support. <br>
+            We always do our best to contribute to your growth as our slogan: Your success is our mission</span>
+    </div>
+    <div class="box-client">
+        <svg id="mySVG" width="1392" height="705" viewBox="0 0 1392 705">
+            <g opacity="1">
+                <g class="cVietNam">
+                    <text x="1150" y="380" dx="-60" dy="-20">Viet Nam</text>
+                    <circle cx="1150" cy="380" r="15" fill="#ff4d4d" stroke="#ff4d4d" linejoin="round" stroke-width="1"
+                        fill-opacity="0.2" stroke-opacity="0.2">
+                        <animate begin="cVN.end+0.1s" attributeType="xml" attributeName="r" from="10" to="15" dur="0.5s"
+                            repeatCount="1" fill="freeze"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="1150" cy="380" r="10" fill="#ff1a1a" stroke="#ff1a1a" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="" begin="cVN.end" attributeName="r" from="5" to="10" dur="0.5s"
+                            fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="1150" cy="380" r="5" fill="#ff4d4d" stroke="#ff4d4d" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="cVN" begin="start.begin" attributeName="r" from="0" to="5"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+
+                <g class="cCanada" style="display: block;">
+                    <text x="200" y="132" dx="20" dy="5">Canada</text>
+                    <circle cx="200" cy="132" r="4.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.9">
+                        <animate begin="canadaAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="canadaAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="200" cy="132" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="" begin="canadaAnimate.end" attributeName="r" from="3" to="8"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="200" cy="132" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="canadaAnimate" begin="start.begin+1.9s" attributeName="r"
+                            from="0" to="3" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 580 520 200 132" id="canada" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cCanada" style="display: block;">
+                    <text x="190" y="218" dx="-80" dy="5">America</text>
+                    <circle cx="190" cy="218" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.9">
+                        <animate begin="americanAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="americanAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="190" cy="218" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="" begin="americanAnimate.end" attributeName="r" from="3" to="8"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="190" cy="218" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="americanAnimate" begin="start.begin+2s" attributeName="r"
+                            from="0" to="3" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 580 570 190 218 " id="american" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cFrance" style="display: block;">
+                    <text x="645" y="186" dx="-70" dy="5">France</text>
+                    <circle cx="645" cy="186" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="franceAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="franceAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="645" cy="186" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="franceAnimate.end" attributeName="r" from="3"
+                            to="8" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="645" cy="186" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au1" begin="start.begin" attributeName="r" from="0" to="3"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 770 420 645 186 " id="framce" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cFrance" style="display: block;">
+                    <text x="678" y="186" dx="-110" dy="-15">Switzerland</text>
+                    <circle cx="678" cy="186" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="franceAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="franceAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="678" cy="186" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="franceAnimate.end" attributeName="r" from="3"
+                            to="8" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="678" cy="186" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="franceAnimate" begin="start.begin+1s" attributeName="r"
+                            from="0" to="3" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 800 390 678 186 " id="swizer" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cNorway" style="display: block;">
+                    <text x="670" y="110" dx="20" dy="5">Norway</text>
+                    <circle cx="670" cy="110" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="norwayAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="norwayAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="670" cy="110" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="norwayAnimate.end" attributeName="r" from="3"
+                            to="8" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="670" cy="110" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="norwayAnimate" begin="start.begin+1s" attributeName="r"
+                            from="0" to="3" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 790 370 670 110 " id="norway" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cFrance" style="display: block;">
+                    <text x="753" y="195" dx="20" dy="5">Romania</text>
+                    <circle cx="753" cy="195" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="franceAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="franceAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="753" cy="195" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="franceAnimate.end" attributeName="r" from="3"
+                            to="8" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="753" cy="195" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au1" begin="start.begin+1s" attributeName="r" from="0" to="3"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 830 340 753 195 " id="romania" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cFrance" style="display: block;">
+                    <text x="678" y="162" dx="-75" dy="-10">Germany</text>
+                    <circle cx="678" cy="162" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="franceAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="franceAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="678" cy="162" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="franceAnimate.end" attributeName="r" from="3"
+                            to="8" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="678" cy="162" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au1" begin="start.begin+1s" attributeName="r" from="0" to="3"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 800 380 678 162" id="germany" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+                <g class="cAu" style="display: block;">
+                    <text x="1297" y="550" dx="-80" dy="-20">Australia</text>
+                    <circle cx="1297" cy="550" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="japanAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="japanAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="1297" cy="550" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="japanAnimate.end" attributeName="r" from="3" to="8"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="1297" cy="550" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au1" begin="start.begin+0.2s" attributeName="r" from="0" to="3"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 1300 380 1297 550 " id="austra" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+
+             
+                <g class="cHK" style="display: block;">
+                    <text x="1160" y="325" dx="-80" dy="-20">Hong Kong</text>
+                    <circle cx="1160" cy="325" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="sinAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="sinAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="1160" cy="325" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="sinAnimate.end" attributeName="r" from="3" to="8"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="3" cx="1160" cy="325" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au1" begin="start.begin" attributeName="r" from="0" to="3"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 1190 350 1160 325 " id="hongkong" stroke="#3e9ec4"
+                    stroke-width="1" fill="none"></path>
+
+                <g class="cHK" style="display: block;">
+                    <text x="1125" y="440" dx="-30" dy="30">Singapore </text>
+                    <circle cx="1125" cy="440" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate begin="sinAnimate.end+0.1s" attributeType="xml" attributeName="r" from="0" to="20"
+                            dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="sinAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="1125" cy="440" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="sinAnimate.end" attributeName="r" from="3" to="8"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="1125" cy="440" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="sinAnimate" begin="start.begin" attributeName="r" from="0"
+                            to="3" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 1170 420 1125 440 " id="singapore" stroke="#3e9ec4"
+                    stroke-width="1" fill="none"></path>
+
+                <animate class="anim1" xlink:href="#v-b" attributeName="stroke-dashoffset" from="3000" to="0" dur="2s"
+                    begin="indefinite" fill="freeze" id="start"></animate>
+                <g class="cAu" style="display: block;">
+                    <text x="1267" y="240" dx="-30" dy="30">Japan</text>
+                    <circle class="c5" id="ctest" cx="1267" cy="240" r="2.1631" fill="#3e9ec4" stroke="#3e9ec4"
+                        linejoin="round" stroke-width="1" fill-opacity="0.8" stroke-opacity="0.9">
+                        <animate id="japanEnd" begin="japanAnimate.end+0.1s" attributeType="xml" attributeName="r"
+                            from="0" to="20" dur="1s" repeatCount="indefinite"></animate>
+                        <animate attributeName="opacity" from="1" to="0" dur="1s" begin="japanAnimate.end+0.1s"
+                            repeatCount="indefinite"></animate>
+                    </circle>
+
+                    <circle class="c8" cx="1267" cy="240" r="8" fill="#a0d1ef" stroke="#a0d1ef" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="au2" begin="japanAnimate.end" attributeName="r" from="3" to="8"
+                            dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                    <circle class="c3" cx="1267" cy="240" r="3" fill="#3e9ec4" stroke="#3e9ec4" linejoin="round"
+                        stroke-width="1" fill-opacity="0.9" stroke-opacity="0.2">
+                        <animate attributeType="xml" id="japanAnimate" begin="start.begin" attributeName="r" from="0"
+                            to="3" dur="0.5s" fill="freeze" repeatCount="1"></animate>
+                    </circle>
+                </g>
+                <path class="box draw" d="M 1150 380 Q 1460 300 1267 240 " id="japan" stroke="#3e9ec4" stroke-width="1"
+                    fill="none"></path>
+                Sorry, your browser does not support inline SVG.
+                <g></g>
+            </g>
+        </svg>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        function showIntroduce(e) {
+            if (e.parentElement.class.indexOf("active") > 0) {
+                e.parentElement.class = e.parentElement.class.replace("active", "")
+            }
+            else {
+                e.parentElement.class = e.parentElement.class + " active"
+            }
+
+
+            if (e.class.indexOf("active", 0) > 0) {
+                e.class = e.class.replace("active", "")
+
+            }
+            else
+                e.class = e.class + " active"
+        }
+        function miniIconClick(e) {
+            if (e.parentElement.class.indexOf("active") > 0) {
+                e.parentElement.class = e.parentElement.class.replace("active", "")
+            }
+            else {
+                e.parentElement.class = e.parentElement.class + " active"
+            }
+        }
+    </script>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="left">
+                <div class="logo">
+                    <div class="logo-text">
+                        <span style="color:#444">NPM</span>
+                        <span>TECHNOLOGY</span>
+                    </div>
+                    <div class="logo-sub-text">
+                        <span style="color:#444">Better for your innovation</span>
+                    </div>
+                </div>
+                <div class="office-info">
+                    <div class="adress">
+                        <img
+                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTUuODczLDBjLTgxLjExNSwwLTE0Ny4xMDYsNjUuOTkyLTE0Ny4xMDYsMTQ3LjEwNmMwLDMzLjcxOCwxMS42NjksNjYuNTkxLDMyLjg4Myw5Mi43MDYgICAgYzAuMTU4LDAuMjQ1LDAuMzI4LDAuNDg0LDAuNTEsMC43MTZsMTA1LjgzLDEzNS41ODRjMS44OTUsMi40MjgsNC44MDMsMy44NDcsNy44ODMsMy44NDdzNS45ODctMS40Miw3Ljg4Mi0zLjg0OWwxMDYuMzM4LTEzNi4yOTcgICAgYzAuMDM3LTAuMDQ4LDAuMDczLTAuMDk1LDAuMTA5LTAuMTQzYzIxLjEzNy0yNi4wODIsMzIuNzc1LTU4LjkzOSwzMi43NzUtOTIuNTY0QzQwMi45NzksNjUuOTkyLDMzNi45ODgsMCwyNTUuODczLDB6ICAgICBNMzU0LjQ1MSwyMjcuMzQ0Yy0wLjEyNywwLjE1Ni0wLjI0NywwLjMxMy0wLjM2MywwLjQ3NGwtOTguMjE3LDEyNS44ODlsLTk3LjIyNi0xMjQuNTZjLTAuMjQyLTAuMzk1LTAuNTE0LTAuNzc2LTAuODE0LTEuMTQgICAgYy0xOC43NDQtMjIuNjg3LTI5LjA2Ni01MS40MTgtMjkuMDY2LTgwLjkwMWMwLTcwLjA4Nyw1Ny4wMjEtMTI3LjEwOCwxMjcuMTA4LTEyNy4xMDhzMTI3LjEwOCw1Ny4wMjEsMTI3LjEwOSwxMjcuMTA4ICAgIEMzODIuOTgyLDE3Ni4yNzQsMzcyLjg0OSwyMDQuNzcsMzU0LjQ1MSwyMjcuMzQ0eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0Mi4xNzksMTIzLjc1OWMtMS41NjMtNS4yOTctNy4xMjQtOC4zMjMtMTIuNDItNi43NjFjLTUuMjk3LDEuNTYzLTguMzI0LDcuMTIzLTYuNzYxLDEyLjQyICAgIGM3LjI2OSwyNC42NDEsMC41MTIsNTEuMjIyLTE3LjYzNSw2OS4zNjljLTEzLjIxOSwxMy4yMi0zMC43OTYsMjAuNS00OS40OTEsMjAuNXMtMzYuMjcyLTcuMjgtNDkuNDkyLTIwLjUwMSAgICBjLTEzLjIyLTEzLjIyLTIwLjUtMzAuNzk2LTIwLjUtNDkuNDkyczcuMjgtMzYuMjczLDIwLjUwMS00OS40OTJjMTguMTY1LTE4LjE2Niw0NC43NjgtMjQuOTE3LDY5LjQyOC0xNy42MTcgICAgYzUuMjk3LDEuNTY5LDEwLjg1OS0xLjQ1NCwxMi40MjYtNi43NDljMS41NjgtNS4yOTUtMS40NTUtMTAuODU5LTYuNzQ5LTEyLjQyNmMtMzEuNjk2LTkuMzgyLTY1Ljg5Mi0wLjcwMi04OS4yNDUsMjIuNjUxICAgIGMtMTYuOTk2LDE2Ljk5Ny0yNi4zNTcsMzkuNTk2LTI2LjM1Nyw2My42MzNzOS4zNiw0Ni42MzUsMjYuMzU3LDYzLjYzMmMxNi45OTcsMTYuOTk3LDM5LjU5NiwyNi4zNTgsNjMuNjMzLDI2LjM1OCAgICBjMjQuMDM3LDAsNDYuNjM1LTkuMzYxLDYzLjYzMi0yNi4zNTZDMzQyLjgzNSwxODkuNTk5LDM1MS41MjMsMTU1LjQzMSwzNDIuMTc5LDEyMy43NTl6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzE5LjY4Myw4NS44MzdsLTAuMTc3LTAuMTc4Yy0zLjkwNi0zLjkwNS0xMC4yMzctMy45MDUtMTQuMTQxLDBjLTMuOTA1LDMuOTA2LTMuOTA1LDEwLjIzNywwLDE0LjE0MWwwLjE3NywwLjE3OCAgICBjMS45NTIsMS45NTMsNC41MTEsMi45MjksNy4wNywyLjkyOXM1LjExOC0wLjk3Niw3LjA3MS0yLjkyOUMzMjMuNTg3LDk2LjA3MywzMjMuNTg3LDg5Ljc0MiwzMTkuNjgzLDg1LjgzN3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MDkuNjA4LDMwNS4zMDVjLTUuMjQ1LTEuNzIzLTEwLjg5OCwxLjEyNi0xMi42MjQsNi4zNzJjLTEuNzI2LDUuMjQ1LDEuMTI3LDEwLjg5Nyw2LjM3MiwxMi42MjQgICAgYzU1LjQ5LDE4LjI2LDg4LjYxNyw0NS42MTksODguNjE3LDczLjE4NGMwLDIzLjMwOC0yNC4wMzksNDYuODkyLTY1Ljk1NSw2NC43MDJjLTQ1LjI1LDE5LjIyNy0xMDUuNjMsMjkuODE2LTE3MC4wMTksMjkuODE2ICAgIHMtMTI0Ljc2OS0xMC41ODktMTcwLjAxOS0yOS44MTZjLTQxLjkxNS0xNy44MS02NS45NTUtNDEuMzkzLTY1Ljk1NS02NC43MDJjMC0xOS41MiwxNi44MzYtMzkuMzQ4LDQ3LjQwOC01NS44MzQgICAgYzMyLjMwMS0xNy40MTksNzguMDQ2LTMwLjAzNCwxMjguODA3LTM1LjUyMWM1LjQ5LTAuNTk0LDkuNDYtNS41MjUsOC44NjYtMTEuMDE2Yy0wLjU5NC01LjQ5LTUuNTI3LTkuNDY0LTExLjAxNi04Ljg2NiAgICBjLTUzLjI3Myw1Ljc1OS0xMDEuNjI1LDE5LjE4NC0xMzYuMTUsMzcuODAyYy0zNy44ODcsMjAuNDMxLTU3LjkxMyw0NS44MjQtNTcuOTEzLDczLjQzNWMwLDMyLjE4MywyNy43NDgsNjEuNjk4LDc4LjEzMiw4My4xMDcgICAgQzEyNS44MjgsNTAwLjg0NSwxODguOTg1LDUxMiwyNTYsNTEyczEzMC4xNzItMTEuMTU1LDE3Ny44MzktMzEuNDA4YzUwLjM4NC0yMS40MDksNzguMTMyLTUwLjkyMyw3OC4xMzItODMuMTA3ICAgIEM1MTEuOTcxLDM2MC4zMTEsNDc0LjY2MiwzMjYuNzEzLDQwOS42MDgsMzA1LjMwNXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNjMuODU3LDI5My4zMTdsLTAuMzQ4LTAuMDdjLTUuNDEzLTEuMDkxLTEwLjY4NywyLjQxMi0xMS43NzksNy44MjVjLTEuMDkxLDUuNDEzLDIuNDEyLDEwLjY4Nyw3LjgyNSwxMS43NzlsMC4zNDgsMC4wNyAgICBjMC42NjgsMC4xMzQsMS4zMzIsMC4xOTksMS45ODgsMC4xOTljNC42NjEsMCw4LjgzMy0zLjI3OSw5Ljc5MS04LjAyNEMzNzIuNzczLDI5OS42ODMsMzY5LjI3LDI5NC40MDksMzYzLjg1NywyOTMuMzE3eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE4MC4zOTksMzM3LjAyMWMtMS4wODMtNS40MTQtNi4zNS04LjkyNS0xMS43NjYtNy44NDRjLTAuMjI1LDAuMDQ1LTAuNDY0LDAuMTAxLTAuNjg2LDAuMTYyICAgIGMtNS4zMjcsMS40NTMtOC40NjgsNi45NDktNy4wMTUsMTIuMjc3YzEuMjEzLDQuNDQ4LDUuMjQzLDcuMzcxLDkuNjQxLDcuMzcxYzAuNzg3LDAsMS41ODQtMC4wOTMsMi4zOC0wLjI4OCAgICBDMTc4LjE0MiwzNDcuNDQ0LDE4MS40NTYsMzQyLjMwMywxODAuMzk5LDMzNy4wMjF6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjg5LjM2MywzMjAuNzQ2Yy01LjUxMS0wLjQyNS0xMC4zMTgsMy42ODMtMTAuNzQ5LDkuMTg4Yy0wLjQzMSw1LjUwNSwzLjY4MywxMC4zMTgsOS4xODgsMTAuNzQ5ICAgIGM2NS4yODUsNS4xMSwxMDAuMDU2LDI0LjIwNSwxMDAuMDU2LDM2LjAyNGMwLDUuNzAyLTkuMDksMTUuMzg4LTM0LjcwOSwyMy45MmMtMjUuODAyLDguNTkzLTYwLjMwMywxMy4zMjYtOTcuMTQ5LDEzLjMyNiAgICBzLTcxLjM0OC00LjczMi05Ny4xNDktMTMuMzI2Yy0yNS42MTktOC41MzItMzQuNzA5LTE4LjIxOC0zNC43MDktMjMuOTJjMC01LjIxMSw3LjA2Ny0xMS43ODEsMTguOTA0LTE3LjU3MiAgICBjNC45Ni0yLjQyNyw3LjAxMy04LjQxNSw0LjU4Ni0xMy4zNzVjLTIuNDI3LTQuOTYtOC40MTUtNy4wMTQtMTMuMzc2LTQuNTg2Yy0yNC44ODgsMTIuMTc4LTMwLjExMywyNi4wNDUtMzAuMTEzLDM1LjUzNSAgICBjMCwzNy41ODEsNzYuMzkzLDU3LjI0NCwxNTEuODU2LDU3LjI0NHMxNTEuODU2LTE5LjY2MywxNTEuODU3LTU3LjI0NUM0MDcuODU3LDM0Mi4yNDgsMzQ0LjAyNSwzMjUuMDI1LDI4OS4zNjMsMzIwLjc0NnoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                        <p>Level 2, M.I.D Building, 02 Nguyen The Loc Street, Ward 12 Tan Binh District, Ho Chi Minh
+                            City</p>
+                    </div>
+                    <div class="phone">
+                        <img
+                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3My44MDYgNDczLjgwNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDczLjgwNiA0NzMuODA2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzc0LjQ1NiwyOTMuNTA2Yy05LjctMTAuMS0yMS40LTE1LjUtMzMuOC0xNS41Yy0xMi4zLDAtMjQuMSw1LjMtMzQuMiwxNS40bC0zMS42LDMxLjVjLTIuNi0xLjQtNS4yLTIuNy03LjctNCAgICBjLTMuNi0xLjgtNy0zLjUtOS45LTUuM2MtMjkuNi0xOC44LTU2LjUtNDMuMy04Mi4zLTc1Yy0xMi41LTE1LjgtMjAuOS0yOS4xLTI3LTQyLjZjOC4yLTcuNSwxNS44LTE1LjMsMjMuMi0yMi44ICAgIGMyLjgtMi44LDUuNi01LjcsOC40LTguNWMyMS0yMSwyMS00OC4yLDAtNjkuMmwtMjcuMy0yNy4zYy0zLjEtMy4xLTYuMy02LjMtOS4zLTkuNWMtNi02LjItMTIuMy0xMi42LTE4LjgtMTguNiAgICBjLTkuNy05LjYtMjEuMy0xNC43LTMzLjUtMTQuN3MtMjQsNS4xLTM0LDE0LjdjLTAuMSwwLjEtMC4xLDAuMS0wLjIsMC4ybC0zNCwzNC4zYy0xMi44LDEyLjgtMjAuMSwyOC40LTIxLjcsNDYuNSAgICBjLTIuNCwyOS4yLDYuMiw1Ni40LDEyLjgsNzQuMmMxNi4yLDQzLjcsNDAuNCw4NC4yLDc2LjUsMTI3LjZjNDMuOCw1Mi4zLDk2LjUsOTMuNiwxNTYuNywxMjIuN2MyMywxMC45LDUzLjcsMjMuOCw4OCwyNiAgICBjMi4xLDAuMSw0LjMsMC4yLDYuMywwLjJjMjMuMSwwLDQyLjUtOC4zLDU3LjctMjQuOGMwLjEtMC4yLDAuMy0wLjMsMC40LTAuNWM1LjItNi4zLDExLjItMTIsMTcuNS0xOC4xYzQuMy00LjEsOC43LTguNCwxMy0xMi45ICAgIGM5LjktMTAuMywxNS4xLTIyLjMsMTUuMS0zNC42YzAtMTIuNC01LjMtMjQuMy0xNS40LTM0LjNMMzc0LjQ1NiwyOTMuNTA2eiBNNDEwLjI1NiwzOTguODA2ICAgIEM0MTAuMTU2LDM5OC44MDYsNDEwLjE1NiwzOTguOTA2LDQxMC4yNTYsMzk4LjgwNmMtMy45LDQuMi03LjksOC0xMi4yLDEyLjJjLTYuNSw2LjItMTMuMSwxMi43LTE5LjMsMjAgICAgYy0xMC4xLDEwLjgtMjIsMTUuOS0zNy42LDE1LjljLTEuNSwwLTMuMSwwLTQuNi0wLjFjLTI5LjctMS45LTU3LjMtMTMuNS03OC0yMy40Yy01Ni42LTI3LjQtMTA2LjMtNjYuMy0xNDcuNi0xMTUuNiAgICBjLTM0LjEtNDEuMS01Ni45LTc5LjEtNzItMTE5LjljLTkuMy0yNC45LTEyLjctNDQuMy0xMS4yLTYyLjZjMS0xMS43LDUuNS0yMS40LDEzLjgtMjkuN2wzNC4xLTM0LjFjNC45LTQuNiwxMC4xLTcuMSwxNS4yLTcuMSAgICBjNi4zLDAsMTEuNCwzLjgsMTQuNiw3YzAuMSwwLjEsMC4yLDAuMiwwLjMsMC4zYzYuMSw1LjcsMTEuOSwxMS42LDE4LDE3LjljMy4xLDMuMiw2LjMsNi40LDkuNSw5LjdsMjcuMywyNy4zICAgIGMxMC42LDEwLjYsMTAuNiwyMC40LDAsMzFjLTIuOSwyLjktNS43LDUuOC04LjYsOC42Yy04LjQsOC42LTE2LjQsMTYuNi0yNS4xLDI0LjRjLTAuMiwwLjItMC40LDAuMy0wLjUsMC41ICAgIGMtOC42LDguNi03LDE3LTUuMiwyMi43YzAuMSwwLjMsMC4yLDAuNiwwLjMsMC45YzcuMSwxNy4yLDE3LjEsMzMuNCwzMi4zLDUyLjdsMC4xLDAuMWMyNy42LDM0LDU2LjcsNjAuNSw4OC44LDgwLjggICAgYzQuMSwyLjYsOC4zLDQuNywxMi4zLDYuN2MzLjYsMS44LDcsMy41LDkuOSw1LjNjMC40LDAuMiwwLjgsMC41LDEuMiwwLjdjMy40LDEuNyw2LjYsMi41LDkuOSwyLjVjOC4zLDAsMTMuNS01LjIsMTUuMi02LjkgICAgbDM0LjItMzQuMmMzLjQtMy40LDguOC03LjUsMTUuMS03LjVjNi4yLDAsMTEuMywzLjksMTQuNCw3LjNjMC4xLDAuMSwwLjEsMC4xLDAuMiwwLjJsNTUuMSw1NS4xICAgIEM0MjAuNDU2LDM3Ny43MDYsNDIwLjQ1NiwzODguMjA2LDQxMC4yNTYsMzk4LjgwNnoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMjU2LjA1NiwxMTIuNzA2YzI2LjIsNC40LDUwLDE2LjgsNjksMzUuOHMzMS4zLDQyLjgsMzUuOCw2OWMxLjEsNi42LDYuOCwxMS4yLDEzLjMsMTEuMmMwLjgsMCwxLjUtMC4xLDIuMy0wLjIgICAgYzcuNC0xLjIsMTIuMy04LjIsMTEuMS0xNS42Yy01LjQtMzEuNy0yMC40LTYwLjYtNDMuMy04My41cy01MS44LTM3LjktODMuNS00My4zYy03LjQtMS4yLTE0LjMsMy43LTE1LjYsMTEgICAgUzI0OC42NTYsMTExLjUwNiwyNTYuMDU2LDExMi43MDZ6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTQ3My4yNTYsMjA5LjAwNmMtOC45LTUyLjItMzMuNS05OS43LTcxLjMtMTM3LjVzLTg1LjMtNjIuNC0xMzcuNS03MS4zYy03LjMtMS4zLTE0LjIsMy43LTE1LjUsMTEgICAgYy0xLjIsNy40LDMuNywxNC4zLDExLjEsMTUuNmM0Ni42LDcuOSw4OS4xLDMwLDEyMi45LDYzLjdjMzMuOCwzMy44LDU1LjgsNzYuMyw2My43LDEyMi45YzEuMSw2LjYsNi44LDExLjIsMTMuMywxMS4yICAgIGMwLjgsMCwxLjUtMC4xLDIuMy0wLjJDNDY5LjU1NiwyMjMuMzA2LDQ3NC41NTYsMjE2LjMwNiw0NzMuMjU2LDIwOS4wMDZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                        <p>(037) 9834365</p>
+                    </div>
+                    <div class="email">
+                        <img
+                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ1Mi44NCA0NTIuODQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ1Mi44NCA0NTIuODQiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CiAgPGc+CiAgICA8cGF0aCBkPSJtNDQ5LjQ4MywxOTAuNGwuMDAxLS4wMDEtNTcuODI0LTM4LjMzNXYtMTI4LjEzNGMwLTQuMTQyLTMuMzU4LTcuNS03LjUtNy41aC0zMTUuNDljLTQuMTQyLDAtNy41LDMuMzU4LTcuNSw3LjV2MTI4LjE0M2wtNTcuODE0LDM4LjMyNiAuMDAxLC4wMDJjLTIuMDIyLDEuMzQzLTMuMzU3LDMuNjM5LTMuMzU3LDYuMjQ5djIzMi4yNmMwLDQuMTQyIDMuMzU4LDcuNSA3LjUsNy41aDQzNy44NGM0LjE0MiwwIDcuNS0zLjM1OCA3LjUtNy41di0yMzIuMjZjMC0yLjYxLTEuMzM1LTQuOTA2LTMuMzU3LTYuMjV6bS0zODguMzEzLDI2LjIyOWwtMjMuNTI1LTEyLjQ3OWgyMy41MjV2MTIuNDc5em0tNDYuMTctNy41MTFsMTcyLjQ3NSw5MS40OS0xNzIuNDc1LDExNC4zMjd2LTIwNS44MTd6bTIxMS40MTcsODMuNjcxbDE5NC4wMzcsMTI4LjYyMWgtMzg4LjA3M2wxOTQuMDM2LTEyOC42MjF6bTM4Ljk0NSw3LjgybDE3Mi40NzctOTEuNDkxdjIwNS44MjFsLTE3Mi40NzctMTE0LjMzem0xMjYuMjk4LTk2LjQ1OWgyMy41MzZsLTIzLjUzNiwxMi40ODR2LTEyLjQ4NHptMjguNzk0LTE1aC0yOC43OTR2LTE5LjA5bDI4Ljc5NCwxOS4wOXptLTQzLjc5NC0xNTcuNzJ2MTkzLjE2MWwtMTI1LjUyNyw2Ni41ODYtMjAuNTczLTEzLjYzN2MtMi41MTEtMS42NjUtNS43NzYtMS42NjUtOC4yODcsMGwtMjAuNTcsMTMuNjM1LTEyNS41MzMtNjYuNTg5di0xOTMuMTU2aDMwMC40OXptLTMxNS40OSwxNTcuNzJoLTI4Ljc4MmwyOC43ODItMTkuMDh2MTkuMDh6IiBmaWxsPSIjMDAwMDAwIi8+CiAgICA8cGF0aCBkPSJtMjI2LjQxNSwyMTMuNjcxaDU5Ljc1NGM0LjE0MiwwIDcuNS0zLjM1OCA3LjUtNy41cy0zLjM1OC03LjUtNy41LTcuNWgtNTkuNzU0Yy0yOC44MTMsMC01Mi4yNTQtMjMuNDQxLTUyLjI1NC01Mi4yNTR2LTIuMjEzYzAtMjguODEzIDIzLjQ0MS01Mi4yNTQgNTIuMjU0LTUyLjI1NHM1Mi4yNTQsMjMuNDQxIDUyLjI1NCw1Mi4yNTR2NS41MzNjMCw2LjIzNy01LjA3NCwxMS4zMTItMTEuMzEyLDExLjMxMnMtMTEuMzEyLTUuMDc0LTExLjMxMi0xMS4zMTJ2LTEwLjUxMmMwLTE3Ljg2NC0xNC41MzMtMzIuMzk4LTMyLjM5Ny0zMi4zOThzLTMyLjM5NywxNC41MzMtMzIuMzk3LDMyLjM5OGMwLDE3Ljg2NCAxNC41MzMsMzIuMzk3IDMyLjM5NywzMi4zOTcgOC4xNjksMCAxNS42MzYtMy4wNDUgMjEuMzQtOC4wNTIgNC42NDQsNy40ODMgMTIuOTMyLDEyLjQ3OCAyMi4zNjksMTIuNDc4IDE0LjUwOCwwIDI2LjMxMi0xMS44MDMgMjYuMzEyLTI2LjMxMnYtNS41MzNjMC0zNy4wODQtMzAuMTctNjcuMjU0LTY3LjI1NC02Ny4yNTRzLTY3LjI1NCwzMC4xNy02Ny4yNTQsNjcuMjU0djIuMjEzYzUuNjg0MzRlLTE0LDM3LjA4NSAzMC4xNyw2Ny4yNTUgNjcuMjU0LDY3LjI1NXptLTIuNzY3LTU3LjA0OWMtOS41OTMsMC0xNy4zOTctNy44MDQtMTcuMzk3LTE3LjM5N3M3LjgwNS0xNy4zOTggMTcuMzk3LTE3LjM5OCAxNy4zOTcsNy44MDUgMTcuMzk3LDE3LjM5OC03LjgwNCwxNy4zOTctMTcuMzk3LDE3LjM5N3oiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=" />
+                        <p>nnam2404@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="contact">
+                    <div class="subscribe">
+                        <label>SUBSCRIBE US</label>
+                        <div class="input">
+                            <input type="text" placeholder="Your Email" />
+                            <span>
+                                <img
+                                    src="data:image/svg+xml;base64,
+                                    PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+CiAgICA8cGF0aCBkPSJtNDAuNCwxMjEuM2MtMC44LDAuOC0xLjgsMS4yLTIuOSwxLjJzLTIuMS0wLjQtMi45LTEuMmMtMS42LTEuNi0xLjYtNC4yIDAtNS44bDUxLTUxLTUxLTUxYy0xLjYtMS42LTEuNi00LjIgMC01LjggMS42LTEuNiA0LjItMS42IDUuOCwwbDUzLjksNTMuOWMxLjYsMS42IDEuNiw0LjIgMCw1LjhsLTUzLjksNTMuOXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KICA8L2c+PC9nPiA8L3N2Zz4=" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                            <a href="#">Company</a>
+                            <a href="#">Services</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Case Studies</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© Copyright 2019 by NPM Technology, Leading Software Outsourcing Company in Vietnam. All Rights
+                Reserved.</span>
+        </div>
+    </div>
+    
+</body>
+
+</html>
